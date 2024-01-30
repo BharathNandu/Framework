@@ -1,0 +1,8 @@
+org\pages\ProductCatalog.class
+org\pages\Orderspage.class
+reporting\ExtentReporterNG.class
+org\pages\ComfirmationPage.class
+org\pages\CartPage.class
+org\pages\CheckoutPage.class
+org\AbstractComponents\AbstractComponent.class
+org\pages\LandingPage.class

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Base.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="ErrorValidations(failed)" verbose="0">
+    <classes>
+      <class name="org.testcases.ErrorvalidationsTest">
+        <methods>
+          <include name="productCatelogError"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.testcases.ErrorvalidationsTest -->
+    </classes>
+  </test> <!-- ErrorValidations(failed) -->
+  <test thread-count="5" parallel="tests" name="SumbitOrders(failed)" verbose="0">
+    <classes>
+      <class name="org.testcases.SubmitOrderTest">
+        <methods>
+          <include name="orderHistory"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="submitOrder" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- org.testcases.SubmitOrderTest -->
+    </classes>
+  </test> <!-- SumbitOrders(failed) -->
+</suite> <!-- Failed suite [Suite] -->
